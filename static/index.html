@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Akademik UNDIP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Container Chatbot -->
+  <div class="chatbot-container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>🎓 Chatbot Akademik UNDIP</h1>
+      <button onclick="clearChat()" class="clear-btn">Clear</button>
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chatBody" class="chat-body"></div>
+
+    <!-- Input -->
+    <div class="input-area">
+      <input 
+        id="userInput"
+        type="text" 
+        placeholder="Tulis pertanyaan di sini..." 
+        onkeydown="handleKey(event)"
+      />
+      <button onclick="sendMessage()" class="send-btn">Kirim</button>
+    </div>
+
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
