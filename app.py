@@ -19,6 +19,7 @@ ADMIN_USERNAME = os.getenv('ADMIN_USERNAME', 'admin')  # Default to 'admin' if n
 ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'BORI_GUANTENG')  # Default to 'BORI_GUANTENG' if not in .env
 
 # Kunci API OpenAI
+api_key = os.getenv ("OPENAI_API_KEY")
 
 # Route untuk logout
 @app.route("/logout")
